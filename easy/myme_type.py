@@ -4,7 +4,6 @@ import math
 # Auto-generated code below aims at helping you parse
 # the standard input according to the problem statement.
 mapping = {}
-files = []
 
 n = int(input())  # Number of elements which make up the association table.
 q = int(input())  # Number Q of file names to be analyzed.
@@ -16,7 +15,6 @@ for i in range(n):
     
 for i in range(q):
     fname = input()  # One file name per line.
-    files.append(fname)
     
     try:
         idx = fname.rindex(".")
