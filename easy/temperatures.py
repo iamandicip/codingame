@@ -19,31 +19,31 @@ if(temps):
 
     have_negatives = False
     have_positives = False
-    
+
     tmps = list(map(int, temps.split(' ')))
-    
+
     if(max(tmps) > 0):
         have_positives = True
-        
+
     if(min(tmps) < 0):
         have_negatives = True
-    
+
     for t in tmps:
         if(t < 0 and t >= highest_negative):
             highest_negative = t
-        
+
         if(t > 0 and t <= lowest_positive):
             lowest_positive = t
-    
+
     if(not have_positives):
         temperature = highest_negative
-        
+
     elif(not have_negatives):
         temperature = lowest_positive
-    
+
     elif(lowest_positive <= abs(highest_negative)):
         temperature = lowest_positive
-    
+
     else:
         temperature = highest_negative
 

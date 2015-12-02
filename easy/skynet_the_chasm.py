@@ -14,7 +14,7 @@ while 1:
     coord_x = int(input())  # the position on the road of the motorbike.
 
     action = ""
-    
+
     # Write an action using print
     # To debug: print("Debug messages...", file=sys.stderr)
     if(road + gap > coord_x + speed):
