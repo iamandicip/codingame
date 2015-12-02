@@ -15,7 +15,7 @@ t = input()
 
 for i in range(h):
     row = input()
-    
+
     text = list(t)
 
     for letter in text:
@@ -23,7 +23,7 @@ for i in range(h):
             l_idx = alphabet.index(letter.upper())
         except ValueError:
             l_idx = idx_replacement
-        
+
         idx = l_idx * l
-        
+
         print(row[idx : idx + l], end="")

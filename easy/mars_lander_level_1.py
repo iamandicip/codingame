@@ -18,7 +18,7 @@ while 1:
     # rotate: the rotation angle in degrees (-90 to 90).
     # power: the thrust power (0 to 4).
     x, y, h_speed, v_speed, fuel, rotate, power = [int(i) for i in input().split()]
-    
+
     if(v_speed <= -40 and power < 4):
         power += 1
     elif(v_speed > -40 and power > 0):
